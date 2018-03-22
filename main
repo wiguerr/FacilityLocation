@@ -20,6 +20,10 @@ void main{
 	update(y, y_best, FO, FO_best); //guarda los mejores resultados hasta ahora
 	
 	
+	//perturbacion
+	
+	
+	
 	
 	
 }
