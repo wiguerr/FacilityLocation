@@ -1,3 +1,4 @@
-main{
-
+void main{
+  int n = 500;
+  
 }
