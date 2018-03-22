@@ -1,4 +1,5 @@
 void main{
-  int n = 500;
-  
+  int n = 500; //numero de puntos de depositos candidatos  
+  int m = 1500; // numero de puntos de afectación existentes
+	int y[n
 }
