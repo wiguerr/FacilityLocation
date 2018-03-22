@@ -1,5 +1,25 @@
 void main{
-  int n = 500; //numero de puntos de depositos candidatos  
-  int m = 1500; // numero de puntos de afectación existentes
-	int y[n] //variables de decision
+	// PArametros del problema
+  	int n = 500; //numero de puntos de depositos candidatos  
+     	int m = 1500; // numero de puntos de afectación existentes
+	public int a[n][m]; //parametro de cobertura
+	public int b[m]; //cantidad de veces que debo cubrir el punto m
+	public int cost[n]; //parametro de costos
+
+	//variables de decisión
+	public int y[n]; //variables de decision
+	public int y_best[n]; //variables de decision
+	public int FO = 0;  //VALOR DE LA FUNCION OBJETIVO
+	public int FO_best = 0; //VALOR DE LA MEJOR FUNCION OBJETIVO
+	
+	//inicialización
+	call cargardatos(a, b, cost); // TO DO
+	call solucionInicial(FO, y, n, m, a); //TO DO poner en y, la solución inicial
+	call LocalSearch(FO, y);
+	FO_best = FO +1;
+	update(y, y_best, FO, FO_best); //guarda los mejores resultados hasta ahora
+	
+	
+	
+	
 }
